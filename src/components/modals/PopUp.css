@@ -1,0 +1,89 @@
+.popup {
+  border: 1px solid rgb(202, 200, 200);
+  width: fit-content;
+  line-height: 40px;
+  font-size: 20px;
+  padding: 0px 10px;
+  margin: 5vh auto;
+  background-color: rgb(174, 246, 174);
+}
+
+.popup:hover {
+  background-color: rgb(150, 232, 150);
+  transition: background 0.3s;
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(129, 127, 127);
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.pop {
+  border: 1px solid rgb(202, 200, 200);
+  width: 400px;
+  height: 300px;
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgb(125, 124, 124);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+
+.from {
+  display: flex;
+  justify-content: space-between;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  padding: 0px 30px;
+}
+
+input[type='radio'] {
+  cursor: pointer;
+}
+
+.message {
+  display: flex;
+  justify-content: space-evenly;
+  line-height: 50px;
+  font-size: 20px;
+  padding: 0px 10px;
+}
+
+#message {
+  width: 235px;
+  height: 100px;
+  resize: none;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  line-height: 35px;
+  font-size: 20px;
+  padding: 0px 25px;
+}
+
+.btn > div {
+  border: 1px solid rgb(202, 200, 200);
+  background-color: rgb(174, 246, 174);
+  padding: 0px 10px;
+  cursor: pointer;
+}
