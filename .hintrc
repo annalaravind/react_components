@@ -10,7 +10,12 @@
           "width: fit-content",
           "height: fit-content",
           "scroll-behavior",
-          "text-emphasis-color"
+          "text-emphasis-color",
+          "accent-color",
+          "aspect-ratio",
+          "backdrop-filter",
+          "backface-visibility",
+          "background-clip"
         ]
       }
     ]

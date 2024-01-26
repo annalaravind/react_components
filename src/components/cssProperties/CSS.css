@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0px 10px 10px 10px;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* accent-color */
+.accent_color {
+  border-bottom: 2px solid black;
+}
+
+input[type='radio'] {
+  accent-color: red;
+}
+
+input[type='checkbox'] {
+  accent-color: blue;
+}
+
+/* align-content */
+/* when we are using flex properties we should specify the width and height of the parent div and the children div's too */
+/* flex-wrap property is the best solution to use align-content property */
+.align_content {
+  border-bottom: 2px solid black;
+}
+
+.align_content_property {
+  border: 1px solid red;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.align_content_property > div {
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+}
+
+/* align-items */
+.align_items {
+  border-bottom: 2px solid black;
+}
+
+.align_items_property {
+  border: 1px solid red;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.align_items_property > div {
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+}
+
+/* align-self */
+.align_self {
+  border-bottom: 2px solid black;
+}
+
+.align_self_property {
+  border: 1px solid red;
+  width: 200px;
+  height: 200px;
+  display: flex;
+}
+
+.align_self_property > div {
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+}
+
+.align_self_property div:nth-child(2) {
+  align-self: center;
+}
+
+/* all */
+/* which means by mentioning this property all it exactly copy the properties which we have given to the parent div  */
+.all {
+  border-bottom: 2px solid black;
+}
+
+.all_property {
+  border: 1px solid black;
+  font-size: 50px;
+}
+
+.all_property > div {
+  all: inherit;
+}
+
+/* animation all properties */
+.animation {
+  border-bottom: 2px solid black;
+}
+
+.animation_all_properties {
+  border: 1px solid red;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.animation_all_properties > div {
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  animation-name: aravind;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+.animation_all_properties > div:hover {
+  animation-play-state: paused;
+}
+
+@keyframes aravind {
+  0%,
+  100% {
+    top: 0;
+    left: 0;
+    background-color: white;
+  }
+  25% {
+    top: 0;
+    left: 150px;
+    background-color: rgb(168, 166, 166);
+  }
+  50% {
+    top: 150px;
+    left: 150px;
+    color: rgb(80, 79, 79);
+  }
+  75% {
+    top: 150px;
+    left: 0;
+    background-color: black;
+  }
+}
+
+/* aspect-ratio */
+/* if width and height are specified then the aspect-ratio property doesn't work */
+/* if width and height are not specified then the aspect-ratio depends on the parent div by taking of margin 10px */
+/* if the parent div have specified width, height and using display: flex property aspect-ratio doesn't work for children div's */
+/* if one of the width and height are specified 
+  Example:  width: 200px;
+            aspect-ratio: 43/54;
+  what is the height of it?
+  Answer: (width/43) X 54 = 251.16 (height)
+*/
+/* aspect-ratio: width / height */
+.aspect_ratio {
+  border-bottom: 2px solid black;
+}
+
+.aspect_ratio_property {
+  border: 1px solid red;
+  /* width: 200px;
+  height: 200px; */
+  display: flex;
+}
+
+.aspect_ratio_property > div {
+  border: 1px solid black;
+  width: 50px;
+  aspect-ratio: 1/1;
+}
+
+/* backdrop-filter */
+.backdrop_filter {
+  border-bottom: 2px solid black;
+}
+
+.backdrop_filter_property {
+  border: 1px solid red;
+  width: 200px;
+  height: 200px;
+  background: url('../images/sea.avif') center/cover no-repeat
+    rgb(241, 162, 241);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backdrop_filter_property > div {
+  border: 1px solid rgb(194, 193, 193);
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  padding-block-start: 10px;
+  /* By applying this webkit only it will work */
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+/* backface-visibility */
+/* backface-visibility works with only transform: rotateY(180deg) property  */
+/* by hovering on the parent div we can access the children div like see line code number: 226 */
+.backface_visibility {
+  border-bottom: 2px solid black;
+  perspective: 1000px;
+}
+
+.backface_visibility_property {
+  border: 1px solid red;
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  transition: transform 1s;
+}
+
+.backface_visibility:hover .backface_visibility_property {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+/* background */
+.background {
+  border-bottom: 2px solid black;
+}
+
+.background_all_properties {
+  border: 1px solid red;
+  width: 200px;
+  height: 200px;
+  color: white;
+  background-image: url('../../../images/img1.jpg');
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  overflow-y: scroll;
+  /* while giving background-attachment: fixed there may be a lot of changes in the division  */
+  /* background-attachment: fixed; */
+
+  /* it changes the layer of an image or background-color  */
+  /* background-blend-mode: luminosity; */
+
+  /* it will change the background according to the content */
+  /* background-clip: border-box; */
+
+  /* it will change the positions of an image in background */
+  /* background-origin: border-box; */
+
+  background-position-x: center;
+  background-position-y: center;
+}
+
+/* block-size */
+/* which means giving instead of height using block-size as a property*/
+.block_size {
+  border-bottom: 2px solid black;
+}
+
+.block_size_property {
+  border: 1px solid red;
+  width: 200px;
+  block-size: 200px;
+}
