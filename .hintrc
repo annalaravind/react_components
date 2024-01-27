@@ -15,7 +15,10 @@
           "aspect-ratio",
           "backdrop-filter",
           "backface-visibility",
-          "background-clip"
+          "background-clip",
+          "border-block",
+          "border-end-end-radius",
+          "border-inline"
         ]
       }
     ]
