@@ -185,7 +185,7 @@ const CSS = () => {
       <p>box-declaration-break</p>
       <div className="box_declaration_break">
         <div className="box_declaration_break_property">
-          <span id='span'>
+          <span id="span">
             Aravind <br />
             is <br />
             a <br />
@@ -193,6 +193,18 @@ const CSS = () => {
             boy
           </span>
         </div>
+      </div>
+      <p>box-reflect</p>
+      <div className="box_reflect">
+        <div className="box_reflect_property">Aravind</div>
+      </div>
+      <p>box-shadow</p>
+      <div className="box_shadow">
+        <div className="box_shadow_property"></div>
+      </div>
+      <p>box-sizing</p>
+      <div className="box_sizing">
+        <div className="box_sizing_property"></div>
       </div>
     </>
   );

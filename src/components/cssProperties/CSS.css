@@ -446,7 +446,42 @@ td {
 }
 
 #span {
-  -o-box-decoration-break:clone;
+  -o-box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
+}
+
+/* box-reflect */
+.box_reflect {
+  border-bottom: 2px solid black;
+}
+
+.box_reflect_property {
+  border: 1px solid red;
+  width: 200px;
+  height: 200px;
+  -webkit-box-reflect: right;
+}
+
+/* box-shadow */
+.box_shadow {
+  border-bottom: 2px solid black;
+}
+
+.box_shadow_property {
+  border: 1px solid red;
+  width: 200px;
+  height: 200px;
+  box-shadow: 5px 5px 5px 5px black;
+}
+
+/* box-sizing */
+/* if we give fixed width and adding the border-pixels and padding and margin etc; and giving border-box value then the total width includes of all */
+/* box-content which gives the perfect content width */
+.box_sizing {
+  border-bottom: 2px solid black;
+}
+
+.box_sizing_property {
+  border: 1px solid red;
 }

@@ -18,7 +18,9 @@
           "background-clip",
           "border-block",
           "border-end-end-radius",
-          "border-inline"
+          "border-inline",
+          "-webkit-box-reflect",
+          "padding-block"
         ]
       }
     ]
