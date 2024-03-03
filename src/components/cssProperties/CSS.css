@@ -484,4 +484,53 @@ td {
 
 .box_sizing_property {
   border: 1px solid red;
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+}
+
+/* box-after */
+.break_after_before_inside {
+  border-bottom: 2px solid black;
+}
+
+.break_after_before_inside_properties {
+  border: 1px solid red;
+  column-width: 300px;
+  overflow: auto;
+}
+
+article {
+  border: 1px dotted black;
+  padding: 10px;
+  break-after: column;
+}
+
+/* caption-side */
+.caption_side {
+  border-bottom: 2px solid black;
+}
+
+.caption_side_property {
+  border: 1px solid red;
+  text-align: center;
+  caption-side: bottom;
+}
+
+/* caret-color */
+/* content editiable is use to edit the content in the browser directly */
+.caret_color {
+  border-bottom: 2px solid black;
+}
+
+.caret_color_property {
+  border: 1px solid red;
+  width: fit-content;
+  padding-top: 20px;
+  height: 200px;
+}
+
+.caret_color_property input {
+  caret-color: chartreuse;
+  font-size: 20px;
 }

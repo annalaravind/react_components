@@ -1,0 +1,66 @@
+@property --linear-gradient-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --linear-gradient-angle: 0deg;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.myButton {
+  border: 1px solid rgb(209, 209, 209);
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  background: white;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.border {
+  position: absolute;
+  inset: -5px;
+  border-radius: 5px;
+  background: linear-gradient(
+    var(--linear-gradient-angle),
+    black 33.33%,
+    white 33.33% 66.33%,
+    rgb(3, 101, 3) 66.33% 99.33%
+  );
+  z-index: -1;
+  filter: blur(3px);
+  pointer-events: none;
+}
+
+.myButton:hover .border {
+  animation: myColor 10s linear infinite;
+}
+
+@keyframes myColor {
+  from {
+    --linear-gradient-angle: 0deg;
+  }
+  to {
+    --linear-gradient-angle: 360deg;
+  }
+}

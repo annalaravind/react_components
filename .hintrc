@@ -20,7 +20,12 @@
           "border-end-end-radius",
           "border-inline",
           "-webkit-box-reflect",
-          "padding-block"
+          "padding-block",
+          "break-after: column",
+          "inset",
+          "@property",
+          "@property",
+          "@property"
         ]
       }
     ]

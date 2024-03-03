@@ -204,7 +204,90 @@ const CSS = () => {
       </div>
       <p>box-sizing</p>
       <div className="box_sizing">
-        <div className="box_sizing_property"></div>
+        <div className="box_sizing_property">Aravind</div>
+      </div>
+      <p contentEditable>break-after && break-before && break-inside</p>
+      <div className="break_after_before_inside">
+        <div className="break_after_before_inside_properties">
+          <article>
+            <h4>Aravind</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis sunt soluta corrupti mollitia voluptatem, eius numquam
+              neque voluptate, non accusamus facilis voluptatibus perspiciatis
+              maiores unde id recusandae! Iste, fuga magni?
+            </p>
+          </article>
+          <article>
+            <h4>Aravind</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis sunt soluta corrupti mollitia voluptatem, eius numquam
+              neque voluptate, non accusamus facilis voluptatibus perspiciatis
+              maiores unde id recusandae! Iste, fuga magni?
+            </p>
+          </article>
+          <article>
+            <h4>Aravind</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis sunt soluta corrupti mollitia voluptatem, eius numquam
+              neque voluptate, non accusamus facilis voluptatibus perspiciatis
+              maiores unde id recusandae! Iste, fuga magni?
+            </p>
+          </article>
+          <article>
+            <h4>Aravind</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis sunt soluta corrupti mollitia voluptatem, eius numquam
+              neque voluptate, non accusamus facilis voluptatibus perspiciatis
+              maiores unde id recusandae! Iste, fuga magni?
+            </p>
+          </article>
+          <article>
+            <h4>Aravind</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis sunt soluta corrupti mollitia voluptatem, eius numquam
+              neque voluptate, non accusamus facilis voluptatibus perspiciatis
+              maiores unde id recusandae! Iste, fuga magni?
+            </p>
+          </article>
+        </div>
+      </div>
+      <p>caption-side</p>
+      <div className="caption_side">
+        <div className="caption_side_property">
+          <table>
+            <caption>This is my caption</caption>
+            <thead>
+              <tr>
+                <th>Num1</th>
+                <th>Num2</th>
+                <th>Num3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <p contentEditable>caret-color</p>
+      <div className="caret_color">
+        <div className="caret_color_property">
+          <input type="text" name="fullname" id="name" />
+        </div>
       </div>
     </>
   );
